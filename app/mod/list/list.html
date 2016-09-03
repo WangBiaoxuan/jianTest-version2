@@ -1,0 +1,18 @@
+<h1 class="container">用户列表</h1>
+<table class="table table-striped table-hover">
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>邮箱</th>
+        <th>操作</th>
+    </tr>
+    <tr ng-repeat="key in data" ng-click="details($index)">
+        <td> {{ key.name }} </td>
+        <td> {{ key.sex }} </td>
+        <td> {{ key.age }} </td>
+        <td> {{ key.email }} </td>
+        <td><a href="" ng-click="delete($index)">删除</a></td>
+    </tr>
+</table>
+<h2 class="container"><a ui-sref="add">添加用户</a></h2>

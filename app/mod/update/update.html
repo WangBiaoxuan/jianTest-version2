@@ -1,0 +1,39 @@
+<form action="" class="form-horizontal">
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <h1 class="center-block">修改用户</h1>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">姓名</label>
+        <div class="col-sm-10">
+            <input ng-model="data.name" type="text" class="form-control" id="name" placeholder="姓名">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">性别</label>
+        <div class="col-sm-10">
+            <label class="radio-inline">
+                <input  ng-model="data.sex"  type="radio" name="sex" id="inlineRadio1" value="男"> 男
+            </label>
+            <label class="radio-inline">
+                <input  ng-model="data.sex"  type="radio" name="sex" id="inlineRadio2" value="女"> 女
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="age" class="col-sm-2 control-label">年龄</label>
+        <div class="col-sm-10">
+            <input ng-model="data.age" type="text" class="form-control" id="age" placeholder="年龄">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="eamil" class="col-sm-2 control-label">邮箱</label>
+        <div class="col-sm-10">
+            <input ng-model="data.email" type="text" class="form-control" id="eamil" placeholder="邮箱">
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="button" value="修改" ng-click="update()" class="btn btn-primary col-sm-offset-2"/>
+    </div>
+</form>
